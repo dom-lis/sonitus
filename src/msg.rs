@@ -20,7 +20,7 @@ pub enum Msg {
     Stop,
 
     /// add file (or directory) to queue
-    Play { path: PathBuf },
+    Play { path: Vec<PathBuf> },
 
     /// remove track from queue
     Rm { nth: usize, until: Option<usize> },
